@@ -12,7 +12,7 @@ header {
     color: blue;
     display: flex;
     height: 50px;
-    
+
 }
 
 .topnav {
@@ -67,22 +67,54 @@ footer {
 }
 
 .row {
-    display:flex
+    display: flex
 }
 
 .about-me-img {
-    width:50vw;
+    width: 50vw;
     height: auto;
     background-position: center;
 }
 
-.about-me-img:hover{
+.about-me-img:hover {
     filter: grayscale(75%);
 }
 
-.marvel{
-    width:50vw;
+.marvel {
+    width: 50vw;
     height: auto;
     background-position: center;
+}
 
+@media screen and (max-width: 1080px) {
+    header {
+        position: flex;
+        top: 0;
+        width: 100%;
+        height: 50px;
+        padding: 50px;
+    }
+
+    .topnav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 50px;
+        padding: 50px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 1020px) {
+    main{
+        flex-direction: column;
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .row {
+        width: 100%;
+        flex-basis: 100%;
+    }
 }
